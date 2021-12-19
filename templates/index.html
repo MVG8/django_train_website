@@ -9,6 +9,8 @@
 </head>
 <body>
 
+{% if object_list %}
+
 <table border="1">
     <tr>
         <th>ID</th>
@@ -28,6 +30,9 @@
     </tr>
     {% endfor %}
 </table>
+{% else %}
+Нет данных
+{% endif %}
 
 </body>
 </html>
