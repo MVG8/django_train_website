@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h1>{{ object_list }}</h1>
+{{ a }}
+<h1>{{ text }}</h1>
+
+{% for obj in object_list %}
+
+<h2>{{ obj.id }}</h2>
+<h2>{{ obj.order_dt }}</h2>
+<h2>{{ obj.order_name }}</h2>
+<h2>{{ obj.order_phone }}</h2>
+{% endfor %}
+<h2></h2>
+
+</body>
+</html>
