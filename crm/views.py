@@ -29,5 +29,4 @@ def thanks_page(request):
     element = Order(order_name=name, order_phone=phone)
     element.save()
 
-    return render(request, './thanks_page.html', {'name': name,
-                                                   'phone': phone})
+    return render(request, './thanks_page.html', {'name': name,})
